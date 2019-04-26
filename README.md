@@ -1,2 +1,2 @@
 # RoonQuasar
-Roon controller using Qusar and Electron
+Roon controller using Quasar and Electron
