@@ -1,6 +1,6 @@
 # Roon controller using Quasar and Electron
 
-## Quasar Electron App
+## Run Quasar Electron App
 ### dev
 `quasar dev -m electron -t mat | ios`
 
