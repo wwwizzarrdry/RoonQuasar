@@ -1,6 +1,6 @@
 // Configuration for your app
 // Usage:
-// $ quasar dev -m electron -t mat | ios
+// $ quasar dev|build -m electron -t mat|ios
 module.exports = function (ctx) {
   return {
     // app plugins (/src/plugins)
