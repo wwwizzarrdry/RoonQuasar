@@ -1,5 +1,6 @@
 // Configuration for your app
-
+// Usage:
+// $ quasar dev -m electron -t mat | ios
 module.exports = function (ctx) {
   return {
     // app plugins (/src/plugins)
@@ -12,10 +13,10 @@ module.exports = function (ctx) {
     ],
     extras: [
       ctx.theme.mat ? 'roboto-font' : null,
-      'material-icons' // optional, you are not bound to it
+      'material-icons', // default
+      'fontawesome'
       // 'ionicons',
-      // 'mdi',
-      // 'fontawesome'
+      // 'mdi'
     ],
     supportIE: false,
     build: {
@@ -63,12 +64,12 @@ module.exports = function (ctx) {
       // Quasar plugins
       plugins: [
         'Notify'
-      ]
-      // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
-      // i18n: 'de' // Quasar language
+      ],
+      iconSet: ctx.theme.mat ? 'material-icons' : 'fontawesome',
+      i18n: 'en-us' // Quasar language
     },
-    // animations: 'all' --- includes all animations
-    animations: [],
+    // animations: 'all' --- includes all animations, default animations: []
+    animations: 'all',
     ssr: {
       pwa: false
     },
@@ -129,7 +130,7 @@ module.exports = function (ctx) {
         // osxSign: '',
         // protocol: 'myapp://path',
 
-        // Window only
+        // Windows only
         // win32metadata: { ... }
       },
       builder: {
